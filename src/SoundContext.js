@@ -10,6 +10,7 @@
 
 import { createContext, useState, useEffect, useRef } from "react";
 import useArray from "./useArray";
+import { audioFiles } from "./audioFiles";
 
 /* Usage:
       If we want use some sound, we must ad it to list in Sound Context file with specify name,
@@ -17,11 +18,6 @@ import useArray from "./useArray";
   */
 
 // Here we give ll links and names to load on start sounds
-const audioFiles = {
-  sound1: "https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg",
-  sound2: "https://actions.google.com/sounds/v1/cartoon/cartoon_cowbell.ogg",
-  sound3: "https://actions.google.com/sounds/v1/sports/bicycle_pedaling.ogg"
-};
 
 // this helper function queries the src given in the argument. we use it to fetch all audio files.
 const fetchAudio = async (src) => {
@@ -42,7 +38,7 @@ const AudioBlobsProvider = ({ children }) => {
 
   // Use custom hook to have methods od usestate array
   // eslint-disable-next-line
-  const { array, set, push, remove, filter, update, clear } = useArray([]);
+  const { array, set, push, filter } = useArray([]);
 
   // Create bg music ref to store bg-music audio and then can play/pause it.
   const bgMusic = useRef({ audio: false, isPlaing: false });
