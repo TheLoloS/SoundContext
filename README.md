@@ -36,8 +36,8 @@ Add volume component:
 ```javascript
 {volumeChange}
 ```
-Add end edit audio files:
- Go to [audioFiles.js](src/audioFiles.js)
+to edit audio links and names:
+ Go to [audioFiles.js](src/audioFiles.js) and just edit it! 
 
 ## Futures: 
  - Load file only one time in load and then use sound for memory
