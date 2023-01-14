@@ -1,11 +1,20 @@
+// Author:
+//
+// ████████╗██╗  ██╗███████╗██╗      ██████╗ ██╗      ██████╗ ███████╗
+// ╚══██╔══╝██║  ██║██╔════╝██║     ██╔═══██╗██║     ██╔═══██╗██╔════╝
+//    ██║   ███████║█████╗  ██║     ██║   ██║██║     ██║   ██║███████╗
+//    ██║   ██╔══██║██╔══╝  ██║     ██║   ██║██║     ██║   ██║╚════██║
+//    ██║   ██║  ██║███████╗███████╗╚██████╔╝███████╗╚██████╔╝███████║
+//    ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝
+//
+
 import { useContext } from "react";
 import { AudioBlobsContext } from "./SoundContext";
 
 export default function Component() {
   // Take blobs audio objects from useContext and save it to variable.
-  const { playSound, volumeChange, playBgSound } = useContext(
-    AudioBlobsContext
-  );
+  const { playSound, volumeChange, playBgSound } =
+    useContext(AudioBlobsContext);
 
   return (
     <>
