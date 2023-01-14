@@ -32,10 +32,12 @@ const { playSound, volumeChange, playBgSound } = useContext(
    AudioBlobsContext
 );
 ```
-Add volume lvl changer:
+Add volume component:
 ```javascript
 {volumeChange}
 ```
+Add end edit audio files:
+ Go to [audioFiles.js](src/audioFiles.js)
 
 ## Futures: 
  - Load file only one time in load and then use sound for memory
